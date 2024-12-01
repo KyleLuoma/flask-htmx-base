@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "gunicorn", "chat-server:app" , "--bind", "backend:8000"]
+CMD [ "gunicorn", "app:app" , "--bind", "backend:8000"]

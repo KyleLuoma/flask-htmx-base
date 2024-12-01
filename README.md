@@ -9,3 +9,6 @@ You can launch the entire stack by running  ```bash launch_web_server.sh``` scri
 ### Configuring and building
 I am trying to keep this simple, so configure your containers in the launch scripts, configure the Nginx routes in ```/proxy.conf```, 
 and build your Flask app inside the ```/app``` folder, being sure to keep requirements.txt updated.
+
+## Disclaimers
+1. The htmx script is stored locally in the /web_public/js folder. It will be up to the user to make sure this is the correct version for your use case.
