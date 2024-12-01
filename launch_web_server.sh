@@ -9,7 +9,7 @@
 docker network create web-app-net
 
 bash launch_backend.sh
-bash launch_frontent.sh
+bash launch_frontend.sh
 
 
 
