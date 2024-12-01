@@ -5,13 +5,12 @@
 # /var/lib/docker/image/overlay2/imagedb/content/sha256#
 # that corresponds to the message 'writing image sha256:...'
 
-docker kill nginx
-docker rm nginx
+# Create network
+docker network create web-app-net
 
-# Build
-docker build --rm --no-cache -t nginx .
+bash launch_backend.sh
+bash launch_frontent.sh
 
-# Start the web server
-# docker run -dit --name nginx -p 8080:80 nginx
-docker run -it --name nginx -p 8080:80 nginx
+
+
 
